@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="page-title">WeatherApp</h2>
+      <div class="search-field">
+        <input
+          class="search search-box"
+          type="text"
+          placeholder="Search a city"
+        />
+        <button
+          class="btn searchbtn"
+          onclick="
+          getWeather();
+        "
+        >
+          <img class="search-btn" src="search-icon.png" alt="search" />
+        </button>
+      </div>
+      <div class="timeanddate">
+        <p class="time real-time">9:45 am</p>
+        <p class="date">Wednesday</p>
+      </div>
+    </div>
+    <div class="Weather-infobox">
+      <h2 class="weatherh1 weather-condition-image"></h2>
+      <h2 class="weather weather-condition"></h2>
+      <h1 class="temp temp"></h1>
+      <h2 class="city city-name"></h2>
+      <div class="units">
+        <div class="humidity">
+          <img
+            class="weatherunits-images"
+            src="humidity.png"
+            alt="humidity"
+          />
+          <div class="data">
+            <p class="values humid-val">50°c</p>
+            <p class="values">humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+          <img class="weatherunits-images" src="wind.png" alt="wind" />
+          <div class="data">
+            <p class="values wind-val">15 km/h</p>
+            <p class="values">wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

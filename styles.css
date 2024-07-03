@@ -1,0 +1,123 @@
+body {
+    background-color: grey;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .header {
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    justify-content: space-between;
+  }
+  .page-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-family: "Playwrite IT Moderna", cursive;
+  }
+  .search {
+    background-color: white;
+    font-size: 14px;
+    padding: 14px 0px 14px 14px;
+    width: 500px;
+    border: none;
+    border-radius: 28px;
+  }
+  .search-btn {
+    height: 15px;
+    width: 15px;
+  }
+  .btn {
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    padding: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .Weather-infobox {
+    background-image: linear-gradient(white, rgb(103, 97, 97));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 60px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  .weather-images {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    object-fit: cover;
+  }
+  .weatherunits-images {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+  }
+  .temp,
+  .city,
+  .weather {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+  }
+  .weatherh1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .temp {
+    font-weight: 400;
+    color: white;
+  }
+  .units {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .humidity,
+  .wind {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .wind {
+    margin-left: 150px;
+  }
+  .data {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .values {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+  }
+  .timeanddate {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .time,
+  .date {
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
